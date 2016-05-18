@@ -2,11 +2,12 @@ body {
 	font: 100% Cantarell, Arial, Helvetica, sans-serif;
 	line-height: 1.5;
 	background: #fff;
-	color: rgb(76, 67, 65);
-	font-weight:normal;
-	font-style:normal;
+	color: rgb(80, 76, 75);
+	font-weight: normal;
+	font-style: normal;
 }
 
 div {
-	margin-left: 10%; 
+	/*margin-left: 10%; */
+	text-align: center;
 }
