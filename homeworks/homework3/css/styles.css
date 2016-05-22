@@ -1,0 +1,46 @@
+body {
+	font: 100% Open Sans Regular, Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	background: #fff;
+	/*color: #7f7d7d;*/
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1 {
+	color: #2f2f2f;
+	font-size: 200%;
+}
+
+#header .nav {
+	background-color: #525151;
+	color: #eaeaea;
+	/*active color #444444;*/
+	/*active side lines color #838383;*/
+}
+
+.nav li {
+	display: inline;
+}
+
+#footer .nav {
+	background-color: #e1e1e1;
+}
+
+#sidebar {
+	float: left;
+}
+
+#article img {
+	border: 1px solid #c8c8c8;
+}
+
+#footer {
+	clear: both;
+}
+
+
+
+/*.border {
+	border: 1px solid #c8c8c8;
+}*/
