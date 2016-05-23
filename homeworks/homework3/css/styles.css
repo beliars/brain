@@ -18,28 +18,58 @@ h1 {
 	font-size: 250%;
 	padding: 15px 0 15px 0;
 }
+#header .nav {
+	background: #525151;
+	background: -webkit-linear-gradient(#5e5e5e, #333333); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#5e5e5e, #333333); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#5e5e5e, #333333); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#5e5e5e, #333333); /* Standard syntax */
+	background: linear-gradient(#5e5e5e, #333333);
+	color: #eaeaea;
+	/*padding: 10px;*/
+	/*active color #444444;*/
+	/*active side lines color #838383;*/
+}
 
-a {
+#header .nav li a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	height: 100%;
+	padding: 10px;
+}
+
+#header .nav li a:hover {
+	background: #3c3c3c;
+	background: -webkit-linear-gradient(#444343, #5e5e5e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#444343, #5e5e5e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#444343, #5e5e5e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#444343, #5e5e5e); /* Standard syntax */
+	background: linear-gradient(#444343, #5e5e5e);
+	border-right: 1px solid 838383;
+	border-left: 1px solid 838383;
+}
+
+#header {
+	margin: 0 45px 0 45px;
+}
+
+#sidebar li a {
 	text-decoration: none;
 	color: gray;
 }
 
-#header {
-	margin: 0 35px 0 35px;
+#sidebar li a:hover {
+	padding-left: 30px;
+	color: #333333;
 }
+
 
 #content {
 	overflow: auto;
-	margin: 35px;
+	margin: 45px;
 }
 
-#header .nav {
-	background-color: #525151;
-	color: #eaeaea;
-	padding: 10px;
-	/*active color #444444;*/
-	/*active side lines color #838383;*/
-}
 
 /*#header .nav ul {
 	height: 40px;
@@ -51,34 +81,47 @@ a {
     text-align: center;
 }
 
+#headre .nav li a {
+	color: #fff;
+}
+
 #sidebar {
 	float: left;
-	width: 200px;
+	width: 240px;
     height: 240px;
 }
 
 #sidebar ul {
-	border: 1px solid gray;
-	border: 1px solid #c8c8c8;
+/*	border: 1px solid gray;
+*/	border: 1px solid #c8c8c8;
 }
 
 #sidebar li {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #c8c8c8;
     text-align: left;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 24px;
+}
+
+#sidebar li:last-child {
+	border-bottom: none;
 }
 
 #article {
-	width: 800px;
+	width: 710px;
 	float: right;
 }
 
 #article img {
 	float: right;
 	border: 1px solid #c8c8c8;
-    padding: 50px 150px;
+    padding: 50px 108px;
+}
+
+#article p {
+	    padding-top: 40px;
+	    color: #333333;
 }
 
 .clear_right{
@@ -101,9 +144,26 @@ a {
     text-align: center;
 }
 
+#footer .nav li a {
+	text-decoration: none;
+	color: #333333;
+}
+
+#footer .nav li a:hover{
+	text-decoration: underline;
+}
+
+#footer {
+	margin: 0 45px 0 45px;
+}
+
 #copyright {
+	color: #333333;
 	position: absolute;
     top: 11px;
     right: 40px;
 }
 
+#bred {
+	height: 60px;
+}
