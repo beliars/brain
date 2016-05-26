@@ -93,30 +93,6 @@ a {
     margin-right: 20px;
 }
 
-/*.main_menu.bottom {
-    background-color: #e1e1e1;
-}
-
-.main_menu.bottom li a {
-    color: black;
-}
-
-.main_menu.bottom li:hover {
-    background-color: gray;
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
-
-}
-.main_menu.bottom li:hover a{
-    text-decoration: underline;
-
-}
-.main_menu.bottom li:last-child {
-    float: right;
-    line-height: 50px;
-    margin-right: 20px;
-}*/
-
 .main_wrapper {
     margin: 50px 0;
 }

@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+}
+
+body {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper {
+	background: url(../img/bg.jpg) no-repeat center;
+    background-size: 100%;
+    width: 1215px;
+    height: 100%;
+    margin: 0 auto;
+} 
+
+header {
+	background: #074b88;
+}
+
+header li {
+	padding: 0 10px 0 10px;
+}
+
+
+header li a{
+	color: #60b5ed;
+	line-height: 35px;
+}
+
+
+header li:hover:not(:last-child) {
+	background: #4eabda;
+}
+
+header li:hover a {
+	color: #fff;
+}
+
+header li:last-child {
+	margin-right: 20px;
+	background: -webkit-linear-gradient(#51b1dc, #2e7ac4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#51b1dc, #2e7ac4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#51b1dc, #2e7ac4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#51b1dc, #2e7ac4); /* Standard syntax */
+}
+
+header li:last-child a {
+	color: #fff;
+}
+
+/*header li:last-child:hover {
+	background: #074b88;
+}*/
+
+header li:nth-last-child(2) {
+	border-left: 1px solid #60b5ed;
+	padding-left: 15px;
+}
+
+header li:nth-last-child(2) a {
+	color: #fff;
+}
+
+header li:nth-last-child(2):hover {
+	background: #074b88;
+}
+
+
+/*header ul div {
+	border-left: 1px solid #4f9ed7;
+}*/
+
+header img {
+    float: left;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.menu_main {
+	text-align: right;
+}
+
+.menu_main li {
+	/*float: right;*/
+	display: inline-block;
+}
+
+
