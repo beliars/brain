@@ -37,6 +37,8 @@ a {
     margin-bottom: 40px;
 }
 
+/* MAIN MENU STYLES START*/
+
 .main_menu {
     background: #525151;
 	background: -webkit-linear-gradient(#5e5e5e, #333333); /* For Safari 5.1 to 6.0 */
@@ -67,14 +69,23 @@ a {
 }
 
 .bottom_menu {
-	background: #e1e1e1;
-	color: #333333;
+    background: #e1e1e1;
+    color: #333333;
 }
 
+.main_wrapper {
+    margin: 50px 0;
+}
+
+/* MAIN MENU STYLES END*/
+
+/* BOTTOM MENU STYLES START*/
+
+
 .bottom_menu li {
-	float: left;
-	border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
+    float: left;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
 }
 
 .bottom_menu li a {
@@ -93,9 +104,9 @@ a {
     margin-right: 20px;
 }
 
-.main_wrapper {
-    margin: 50px 0;
-}
+/* BOTTOM MENU STYLES END*/
+
+/* LEFT MENU STYLES START*/
 
 .left_menu {
     float: left;
@@ -121,6 +132,10 @@ a {
     padding-left: 20px;
 }
 
+/* LEFT MENU STYLES END*/
+
+/* MAIN CONTENT STYLES START*/
+
 .main {
     float: right;
     width: 70%;
@@ -134,3 +149,5 @@ a {
     margin-top: 50px;
     padding: 0 20px;
 }
+
+/* MAIN CONTENT STYLES END*/
