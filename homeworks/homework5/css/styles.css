@@ -110,7 +110,7 @@ header img {
 /* MAIN SECTION STYLES START*/
 .form_bg_section {
     text-align: center;
-    background: rgba(105, 105, 105, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     padding-top: 35px;
     position: relative;
 }
@@ -122,7 +122,7 @@ header img {
     line-height: 16px;
     position: absolute;
     top: 98px;
-    right: 268px;
+    right: 269px;
 }
 
 .form_bg_section a {
@@ -144,7 +144,7 @@ main h1 {
     font-size: 24px;
     font-weight: 400;
     line-height: 58px;
-    background: rgba(105, 105, 105, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     margin-bottom: 2px;
 }
 
@@ -154,14 +154,11 @@ main img {
     margin: 0 auto 35px;
 }
 
-
-
 /*main img:first-child {
     padding-top: 35px;
 }*/
 
 .input_text input {
-    box-shadow: 0px 1px 0px 0px #4b4b4b;
     width: 276px;
     height: 35px;
     margin-bottom: 17px;
@@ -169,6 +166,42 @@ main img {
     background: black;
     border: none;
     border-bottom: 1px solid #4b4b4b;
+    color: #fff;
+}
+
+/*.input_text input:hover {
+	background: #1b5288;
+	outline: none;
+	box-shadow: 3px #4b87af;
+	-webkit-box-shadow: 0 0 5px 2px #4b87af;
+    -moz-box-shadow: 0 0 5px 2px #4b87af;
+    box-shadow: 0 0 5px 2px #4b87af;
+}*/
+
+.input_text input:focus {
+	background: #1b5288;
+	outline: none;
+	-webkit-box-shadow: 0 0 5px 2px #4b87af;
+    -moz-box-shadow: 0 0 5px 2px #4b87af;
+    box-shadow: 0 0 5px 2px #4b87af;
+}
+
+.input_text input:active {
+	outline: none;
+	background: #1b5288;
+	-webkit-box-shadow: 0 0 5px 2px #4b87af;
+    -moz-box-shadow: 0 0 5px 2px #4b87af;
+    box-shadow: 0 0 5px 2px #4b87af;
+}
+ 
+.input_text input {
+	outline: none;
+}
+
+.input_text input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #000 !important; /* Цвет фона */
+    -webkit-text-fill-color: #fff !important; /* цвет текста */
+    color: #fff !important; /* цвет текста */
 }
 
 main form p {
@@ -193,6 +226,8 @@ main form input[type=submit] {
     height: 35px;
     border: none;
     border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
     background: -webkit-linear-gradient(#51b1dc, #2e7ac4); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#51b1dc, #2e7ac4); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#51b1dc, #2e7ac4); /* For Firefox 3.6 to 15 */
