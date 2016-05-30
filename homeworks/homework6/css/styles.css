@@ -1,0 +1,243 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@font-face {
+    font-family: "Lobster";
+    src: url(../fonts/Lobster.otf); 
+ }
+
+@font-face {
+    font-family: "BebasNeue";
+    src: url(../fonts/BebasNeueBold.otf); 
+ }
+
+*{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*.font_bebas {
+	font-family: BebasNeue;
+	font-weight: 400;
+}*/
+
+/*HEADER STYLES START*/
+
+header {
+	background: #fff;
+	padding: 0 11%;
+	line-height: 84px; 
+}
+
+header h1 {
+	font-family: Lobster;
+	color:  #3bc3b5;
+	font-size: 3.063em;
+	font-weight: 400;
+	text-align: left;
+	float: left;
+}
+
+header input {
+	float: left;
+	outline: none;
+	height: 31px;
+	width: 43%;
+	margin-top: 27px;
+	margin-left: 18%;
+	border: 1px solid #e1e1e1;
+	background: url(../img/search_icon.png) no-repeat;
+	background-position: 99%;
+}
+
+header img {
+	float:left;
+	margin-top: 21px; 
+	margin-left: 15%;
+}
+
+header p {
+	font-family: BebasNeue;
+	color:  #a1a1a1;
+	font-size: 2.063em;
+	font-weight: 400;
+	text-align: left;
+	float: left;
+	margin-top: 4px;
+	margin-left: 2%;
+}
+
+/*HEADER STYLES END*/
+
+/*NAV STYLES START*/
+
+nav {
+	background: #4ccfc1;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+	height: 36px;
+	padding-top: 8px;
+}
+
+nav ul {
+	line-height: 36px;
+	margin: 0 10%
+}
+
+nav ul li {
+	float: left;
+	border-right: 2px solid #fff;
+	padding: 0 2%;
+	line-height: 21px;
+}
+
+nav ul li:last-child {
+	border: none;
+}
+
+nav ul li a {
+	font-family: BebasNeue;
+	color:  #fff;
+	font-size: 1.313em;
+	font-weight: 400;
+	text-align: left;
+}
+
+/*NAV STYLES END*/
+
+/*SLIDER SECTION STYLES START*/
+
+.slider {
+	background: #3cc3b5;
+	padding-top: 5%;
+	padding-bottom: 4%;
+}
+
+.slider_wrapper {
+	margin-top: 5%;
+	margin-bottom: 3%;
+}
+
+.slider figure{
+	float: left;
+	margin-left: 16%;
+}
+
+.slider aside {
+	float: left;
+	width: 31%;
+	margin-left: 7%;
+	padding-top: 1%;
+}
+
+.slider aside h2 {
+	font-family: BebasNeue;
+	color:  #fff;
+	font-size: 3.813em;
+	line-height: 0.885;
+	text-align: left;
+}
+
+.slider aside p {
+	font-family: "Open Sans", Arial, sans-serif;
+	color:  #fff;
+	font-size: 1.063em;
+	line-height: 1.647;
+	font-weight: 400;
+	text-align: left;
+	padding-top: 3%;
+	word-wrap: break-word;
+}
+
+.slider button {
+	font-family: BebasNeue;
+	color:  #fff;
+	font-size: 1.688em;
+	font-weight: 400;
+	/*line-height: 0.704;*/
+	text-align: center;
+	background: rgba(255, 255, 255, 0);
+	border: 3px solid #fff;
+	border-radius: 7px;
+	padding-top: 2%;
+	margin-top: 5%;
+	width: 139px;
+	height: 46px;
+}
+
+.slider_indicators {
+	margin-top: 11%;
+}
+
+.slider_indicators li{
+	border-radius: 50%;
+	background-color:  #ffffff;
+	width: 9px;
+	height: 9px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.slider_indicators .active {
+	border-radius: 50%;
+	background-color:  rgba(255, 255, 255, 0.32);
+	width: 9px;
+	height: 9px;
+}
+
+/*SLIDER SECTION STYLES END*/
+
+/*CAROUSEL SECTION STYLES START*/
+
+.carousel {
+	padding: 1% 0;
+	margin: 0 9%;
+}
+
+.carousel figure {
+	float: left;
+}
+
+.carousel aside {
+	float: left;
+	margin-top: 2.5%;
+    margin-left: -1%;
+}
+
+.carousel h3 {
+	font-family: BebasNeue;
+	color:  #afafaf;
+	font-size: 1.688em;
+	font-weight: 400;
+	line-height: 0.926;
+	text-align: left;
+	margin-bottom: 16%;
+}
+
+.carousel aside button {
+	border: none;
+	border-radius: 3px;
+	background-color:  #3cc395;
+	width: 59px;
+	height: 32px;
+	font-family: BebasNeue;
+	color:  #fff;
+	font-size: 1.188em;
+	font-weight: 400;
+	line-height: 1;
+	text-align: center;
+	padding-top: 4%;
+}
+
+.carousel .item {
+	float: left;
+}
+
+/*CAROUSEL SECTION STYLES END*/
