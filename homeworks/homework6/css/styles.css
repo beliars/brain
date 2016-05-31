@@ -112,32 +112,32 @@ nav ul li a {
 
 /*NAV STYLES END*/
 
-/*SLIDER SECTION STYLES START*/
+/*SECTION TOP STYLES START*/
 
-.slider {
+.section_top {
 	background: #3cc3b5;
 	padding-top: 5%;
 	padding-bottom: 4%;
 }
-
-.slider_wrapper {
+/*
+.section_top {
 	margin-top: 5%;
 	margin-bottom: 3%;
-}
+}*/
 
-.slider figure{
+.section_top figure{
 	float: left;
 	margin-left: 16%;
 }
 
-.slider aside {
+.section_top aside {
 	float: left;
 	width: 31%;
 	margin-left: 7%;
 	padding-top: 1%;
 }
 
-.slider aside h2 {
+.section_top aside h2 {
 	font-family: BebasNeue;
 	color:  #fff;
 	font-size: 3.813em;
@@ -145,7 +145,7 @@ nav ul li a {
 	text-align: left;
 }
 
-.slider aside p {
+.section_top aside p {
 	font-family: "Open Sans", Arial, sans-serif;
 	color:  #fff;
 	font-size: 1.063em;
@@ -156,7 +156,7 @@ nav ul li a {
 	word-wrap: break-word;
 }
 
-.slider button {
+.section_top button {
 	font-family: BebasNeue;
 	color:  #fff;
 	font-size: 1.688em;
@@ -172,11 +172,11 @@ nav ul li a {
 	height: 46px;
 }
 
-.slider_indicators {
+.section_top .slider_indicators {
 	margin-top: 11%;
 }
 
-.slider_indicators li{
+.section_top .slider_indicators li{
 	border-radius: 50%;
 	background-color:  #ffffff;
 	width: 9px;
@@ -185,33 +185,33 @@ nav ul li a {
 	margin-right: 10px;
 }
 
-.slider_indicators .active {
+.section_top .slider_indicators .active {
 	border-radius: 50%;
 	background-color:  rgba(255, 255, 255, 0.32);
 	width: 9px;
 	height: 9px;
 }
 
-/*SLIDER SECTION STYLES END*/
+/*SECTION TOP STYLES END*/
 
 /*CAROUSEL SECTION STYLES START*/
 
-.carousel {
-	padding: 1% 0;
+.section_carousel
+
+.section_carousel__wrapper {
 	margin: 0 9%;
 }
 
-.carousel figure {
+.section_carousel__item figure {
 	float: left;
 }
 
-.carousel aside {
+.section_carousel__item aside {
 	float: left;
-	margin-top: 2.5%;
-    margin-left: -1%;
+	margin-top: 10.5%;
 }
 
-.carousel h3 {
+.section_carousel__item h3, .section_main__item h3, .section_main__item p {
 	font-family: BebasNeue;
 	color:  #afafaf;
 	font-size: 1.688em;
@@ -221,7 +221,7 @@ nav ul li a {
 	margin-bottom: 16%;
 }
 
-.carousel aside button {
+.section_carousel__item aside button {
 	border: none;
 	border-radius: 3px;
 	background-color:  #3cc395;
@@ -231,13 +231,91 @@ nav ul li a {
 	color:  #fff;
 	font-size: 1.188em;
 	font-weight: 400;
-	line-height: 1;
+	line-height: 1em;
 	text-align: center;
 	padding-top: 4%;
 }
 
-.carousel .item {
+.section_carousel__item.item_left {
 	float: left;
+	border-right: 1px solid #ccc;
+	padding: 2% 4% 2% 0;
+}
+
+.section_carousel__item.item_center {
+	float: left;
+	border-right: 1px solid #ccc;
+	padding: 2% 4% 4% 6%;
+}
+
+.section_carousel__item.item_right {
+	float: left;
+	padding: 2% 4% 4% 6%;
 }
 
 /*CAROUSEL SECTION STYLES END*/
+
+/*SECTION MAIN STYLES START*/
+
+.section_main__header h1 {
+	font-family: BebasNeue;
+	color:  #fff;
+	background: #3cc3b5;
+	font-size: 1.938em; 
+	font-weight: 400;
+	line-height: 2.1em;
+	text-align: left;
+	padding-top: 1%;
+	padding-left: 14%;
+}
+
+.section_main__item {
+	float: left;
+	border: 1px solid #ccc;
+	width: 20%;
+    height: 260px;
+    margin-top: 3%;
+    border-bottom: 5px solid #3cc395;
+    text-align: center;
+}
+
+.section_main__item img {
+	
+}
+
+.section_main__item h3, .section_main__item p {
+	text-align: center;
+	margin: 0;
+}
+
+.section_main__item h3 {
+	margin-top: 12%;
+}
+
+.section_main__item p {
+	float: left;
+	margin-top: 5%;
+}
+
+.section_main__item_buy {
+	margin: 3% 22%;
+}
+
+.section_main__item button {
+	border: none;
+	border-radius: 3px;
+	background-color:  #3cc395;
+	width: 74px;
+	height: 34px;
+	font-family: BebasNeue;
+	color:  #fff;
+	font-size: 1.188em;
+	font-weight: 400;
+	line-height: 1em;
+	text-align: center;
+	padding-top: 4%;
+	float: right;
+}
+
+/*SECTION MAIN STYLES END*/
+
