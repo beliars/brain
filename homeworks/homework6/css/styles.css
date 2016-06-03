@@ -114,6 +114,7 @@ nav ul li a {
 	font-size: 1.313em;
 	font-weight: 400;
 	text-align: left;
+	text-transform: uppercase;
 }
 
 /*NAV STYLES END*/
@@ -172,7 +173,7 @@ nav ul li a {
 	background: rgba(255, 255, 255, 0);
 	border: 3px solid #fff;
 	border-radius: 7px;
-	padding-top: 1%;
+	padding-top: 5px;
 	margin-top: 5%;
 	width: 139px;
 	height: 46px;
@@ -202,30 +203,34 @@ nav ul li a {
 
 /*CAROUSEL SECTION STYLES START*/
 
-.section_carousel__wrapper {
-	width: 90%;
-	margin: 0 auto;
+.section_carousel {
 	position: relative;
 }
 
-.section_carousel__wrapper .pointer_left {
+.section_carousel__wrapper {
+	width: 90%;
+	margin-left: 10%;
+}
+
+.section_carousel .pointer_left {
 	position: absolute;
 	top: 50%;
-	left: -2%;
+	left: 1%;
 	transform: translateY(-50%);
 }
 
-.section_carousel__wrapper .pointer_right {
+.section_carousel .pointer_right {
 	position: absolute;
 	top: 50%;
-	right: -2%;
+	right: 1%;
 	transform: translateY(-50%);
 }
 
 .section_carousel__item {
-	width: 33.33%;
+	width: 30%;
+	height: 190px;
+	position: relative;
 	float: left;
-	padding: 2% 0;
     border-right: 1px solid #ccc;
 }
 
@@ -233,23 +238,38 @@ nav ul li a {
 	border: none;
 }
 
-.section_carousel__item figure {
-	float: left;
+.section_carousel__item div.image {
+	position: absolute;
+	top: 20px;
+	left: 0;
 	width: 55%;
-}
-
-.section_carousel__item figure img {
-	padding-left: 25px;
-	max-width: 100%;
+	height: 150px;
+	padding: 20px 0;
+	padding-left: 5%;
 }
 
 .section_carousel__item aside {
-	float: left;
-	width: 35%;
-	margin-top: 8%;
+	width: 45%;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);	
 }
 
-.section_carousel__item h3, .section_main__item h3, .section_main__item p, .menu_bottom__block h3 {
+.section_carousel__item aside h3 {
+	line-height: 30px;
+	height: 60px;
+	overflow: hidden;
+}
+
+.section_carousel__item .image img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.section_carousel__item h3, .section_main__item h3, 
+.section_main__item p, .menu_bottom__block h3,
+.section_main__item .section_main__item_buy span {
 	font-family: BebasNeue;
 	color:  #afafaf;
 	font-size: 1.688em;
@@ -257,6 +277,7 @@ nav ul li a {
 	line-height: 0.926;
 	text-align: left;
 	margin-bottom: 10%;
+	text-transform: uppercase;
 }
 
 .section_carousel__item aside button {
@@ -271,18 +292,15 @@ nav ul li a {
 	font-weight: 400;
 	line-height: 1em;
 	text-align: center;
-	padding-top: 4%;
+	padding-top: 4px;
 }
-
 
 /*CAROUSEL SECTION STYLES END*/
 
 /*SECTION MAIN STYLES START*/
 
 .section_main__wrapper {
-	width: 90%;
-	margin: 0 auto;
-	padding: 3% 10% 0 10%;
+	padding: 3% 12% 0;
 }
 
 .section_main__header h1 {
@@ -300,41 +318,45 @@ nav ul li a {
 .section_main__item {
 	float: left;
 	border: 1px solid #ccc;
-	width: 28%;
+	width: 27.3%;
+	margin: 0 3% 5% 3%; 
     height: 260px;
-    padding-top: 3%;
-    margin: 0 8% 4% 0;
     border-bottom: 5px solid #3cc395;
-    text-align: center;
-}
-
-.section_main__item.right_item {
-	margin-right: 0;
+    padding: 10px 5px;
 }
 
 .section_main__item img {
+	display: block;
+	margin: 0 auto;
+	max-height: 100%;
 	max-width: 100%;
 }
 
-.section_main__item h3, .section_main__item p {
-	text-align: center;
-	margin: 0;
-}
-
 .section_main__item h3 {
-	margin-top: 12%;
+	text-align: center;
+	line-height: 30px;
+	height: 30px;
+	overflow: hidden;
+	margin-bottom: 0;
+	margin-top: 25px;
 }
 
-.section_main__item p {
+.section_main__item div.img_wrapper {
+	height: 120px;
+}
+
+.section_main__item .section_main__item_buy {
+    padding-top: 4px;
+    padding-left: 24%;
+}
+
+.section_main__item .section_main__item_buy span {
 	float: left;
-	margin-top: 5%;
+    margin-right: 15px;
+    padding-top: 8px;
 }
 
-.section_main__item_buy {
-	margin: 3% 22%;
-}
-
-.section_main__item button {
+.section_main__item .section_main__item_buy button {
 	border: none;
 	border-radius: 3px;
 	background-color:  #3cc395;
@@ -346,8 +368,8 @@ nav ul li a {
 	font-weight: 400;
 	line-height: 1em;
 	text-align: center;
-	padding-top: 4%;
-	float: right;
+	padding-top: 6px;
+	float: left;
 }
 
 /*SECTION MAIN STYLES END*/
@@ -359,14 +381,13 @@ nav ul li a {
 }
 
 .menu_bottom__wrapper {
-	width: 90%;
-	margin: 0 auto;
-	padding: 3% 10%;
+	padding: 3% 12%;
 }
 
 .menu_bottom .menu_bottom__block {
 	float: left;
-	margin-right: 10%;
+	width: 25%;
+	padding-left: 3%;
 }
 
 .menu_bottom .menu_bottom__block:last-child {
@@ -375,10 +396,11 @@ nav ul li a {
 
 .menu_bottom .menu_bottom__block h3 {
 	color: #fff;
+	margin-bottom: 5%;
 }
 
 .menu_bottom .menu_bottom__block  a {
-	font-family: OpenSans;
+	font-family: "Open Sans", Arial, sans-serif;
 	color: #fff;
 	font-size: 0.938em; 
 	font-weight: 400;
@@ -392,7 +414,7 @@ nav ul li a {
 
 footer {
 	background: #2da89b;
-	font-family: OpenSans;
+	font-family: "Open Sans", Arial, sans-serif;
 	color:  #fff;
 	font-size: 0.938em;
 	font-weight: 400;
