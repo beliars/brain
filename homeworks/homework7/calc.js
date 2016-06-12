@@ -3,14 +3,14 @@ if (firstNumber)
 	var enteredSign = enterSign();
 if (enteredSign)
 	var secondNumber = enterSecondNum();
-if (secondNumber){
+if (secondNumber || secondNumber === 0){
 	var result = calculate(firstNumber, enteredSign, secondNumber);
 	alert("Результат вычисления " + result);
 }
 
 function enterFirstNum() {
 	var firstNum = 0;
-	firstNum = prompt("Введите первое число.");
+	firstNum = prompt("Введите первое число.", "");
 	if (firstNum === "") {
 		alert("Вы не ввели значение.");
 		return enterFirstNum();
@@ -30,7 +30,7 @@ function enterFirstNum() {
 }
 
 function enterSign() {
-	var sign = prompt("Введите нужный арифметический знак (должен состоять только из 1 символа, например + .", "");
+	var sign = prompt("Введите нужный арифметический знак (должен состоять только из 1 символа (допустимые символы: + - * / %) .", "");
 	if (sign === "") {
 		alert("Вы не ввели знак.");
 		return enterSign();
@@ -43,7 +43,7 @@ function enterSign() {
 		else if (sign === "+" || sign === "-" || sign === "*" || sign === "/" || sign === "%") 
 			return sign;
 		else {
-			alert("Вы ввели недопустимый символ.");
+			alert("Вы ввели недопустимый символ (допустимые символы: + - * / %).");
 			return enterSign();
 		}
 	}
@@ -91,8 +91,9 @@ function calculate(firstNum, sign, secondNum) {
 				result = firstNum % secondNum;
 				break;
 			case "/":
-				if (secondNum === 0)
-					alert("На 0 делать нельзя.")
+				if (secondNum === 0){
+					alert("На 0 делать нельзя.");
+				}
 				else
 					result = firstNum / secondNum;
 				break;
