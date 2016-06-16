@@ -1,6 +1,6 @@
-var min = enterMin();
+var min = getNum("минимальное");
 if (min)
-	var max = enterMax(); 
+	var max = getNum("максимальное"); 
 
 if (min > max) {
 	var tmp = max;
@@ -26,37 +26,19 @@ if (max){
 }
 
 
-function enterMin() {
-	var min = prompt("Задайте диапазон чисел. Введите минимальное число.", "");
-	if (min === "") {
+function getNum(name) {
+	var num;
+	var num = prompt("Введите " + name + " число.", "");
+	if (num === "") {
 		alert("Вы не ввели число.");
-		return enterMin();
+		return getNum(name);
 	} 
-	else if (min) {
-		if (isNaN(parseInt(min))) {
+	else if (num) {
+		if (isNaN(parseInt(num))) {
 			alert("Вы ввели не число.");
-			return enterMin();
+			return getNum(num);
 		}
-		else return min; 
-	}
-	else {
-		alert("Как хотите.");
-		return;
-	}
-}
-
-function enterMax() {
-	var max = prompt("Введите максимальное число.", "");
-	if (max === "") {
-		alert("Вы не ввели число.");
-		return enterMax();
-	} 
-	else if (max) {
-		if (isNaN(parseInt(max))) {
-			alert("Вы ввели не число.");
-			return enterMax();
-		}
-		else return max; 
+		else return num; 
 	}
 	else {
 		alert("Как хотите.");
