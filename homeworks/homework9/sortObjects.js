@@ -19,18 +19,18 @@ var humans = [john, bill, den, bob];
 
 function sortObj(human1, human2) {
 	if (human1.height !== human2.height)
-    return human1.height - human2.height;
-	else {
-		if (human1.surname > human2.surname) {
+    	return human1.height - human2.height;
+    var hum1 = human1.surname.toLowerCase();
+    var hum2 = human2.surname.toLowerCase();
+		if (hum1 > hum2) {
 			return 1;
 		}
-		else if(human1.surname < human2.surname){
+		else if(hum1 < hum2){
             return -1;
         }
-        else if (human1.surname = human2.surname){
+        else if (hum1 = hum2){
             return 0;
-        }
-	}
+		}
 }
 
 console.log(humans.sort(sortObj));
