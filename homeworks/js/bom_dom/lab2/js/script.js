@@ -1,19 +1,27 @@
 var ulElements = document.getElementsByTagName("ul");
+var liElement = ulElements[0].firstElementChild;
+var topMenuElements = "",
+	sideMenuElements = "",
+	imgSrc,
+	copy;
 
-var elements = ulElements[0].getElementsByTagName("a");
-for (var i = 0; i < elements.length; i++) {
-	console.log(elements[i].innerHTML);
-}
+do{
+	if (liElement !== null)
+		topMenuElements += liElement.firstElementChild.innerHTML + " ";
+	liElement = liElement.nextElementSibling;
+}while (liElement !== null);
 
 
 var elements = ulElements[1].children;
 for (var i = 0; i < elements.length; i++) {
-	console.log(elements[i].children[0].innerHTML)
+	sideMenuElements += elements[i].children[0].innerHTML + " ";
 } 
 
-var imgSrc = document.getElementsByTagName("img")[0].src;
-console.log(imgSrc);
+imgSrc = document.getElementsByTagName("img")[0].src;
 
-var copy = document.getElementsByTagName("ul")[2].lastElementChild.innerHTML;
-console.log(copy);
+copy = document.getElementsByTagName("ul")[2].lastElementChild.innerHTML;
 
+console.log("Верхнее меню: " + topMenuElements);
+console.log("Боковое меню: " + sideMenuElements);
+console.log("Адрес изображения: " + imgSrc);
+console.log("Копирайт: " + copy);
