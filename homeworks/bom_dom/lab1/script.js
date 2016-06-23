@@ -1,15 +1,17 @@
-for (var key in window) {
-	 document.write("<p>" + window[key] + "</p>");
+var properties = "";
+for (var property in window) {
+	 properties += "<p>" + property + ": " + window[property] + "</p>";
 }
 
-document.write("<p>" + "1111111111111" + "</p>");
-document.write("<p>" + "2222222222222" + "</p>");
+document.write(properties);
 
-win = window.open("http://www.w3schools.com/", "w3schools", "width=200,height=200");
+var win = window.open("http://www.w3schools.com/", "_blank", "width=200,height=200");
 
 win.resizeTo(800,500);  
 
 window.scrollTo(0, 0);
+
+alert(window.navigator.userAgent);
 
 setTimeout(function() { 
 	win.close(); 

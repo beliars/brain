@@ -1,21 +1,15 @@
-function topMenuElements() {	
-	var elements = document.getElementsByTagName("ul")[0].getElementsByTagName("a");
-	// var aElements = ulElements[0].getElementsByTagName("a");
-	for (var i = 0; i < elements.length; i++) {
-		console.log(elements[i].innerHTML);
-	}
+var ulElements = document.getElementsByTagName("ul");
+
+var elements = ulElements[0].getElementsByTagName("a");
+for (var i = 0; i < elements.length; i++) {
+	console.log(elements[i].innerHTML);
 }
 
-topMenuElements();
 
-function sideMenuElements() {	
-	var elements = document.getElementsByTagName("ul")[1].children;
-	for (var i = 0; i < elements.length; i++) {
-		console.log(elements[i].children[0].innerHTML)
-	} 
-}
-
-sideMenuElements();
+var elements = ulElements[1].children;
+for (var i = 0; i < elements.length; i++) {
+	console.log(elements[i].children[0].innerHTML)
+} 
 
 var imgSrc = document.getElementsByTagName("img")[0].src;
 console.log(imgSrc);
