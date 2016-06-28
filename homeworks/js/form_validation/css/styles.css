@@ -1,0 +1,15 @@
+.main_form {
+	width: 35%;
+	margin: 2% 5%;
+}
+
+p.errors {
+	line-height: 20px;
+	height: 20px;
+	font-weight: 900;
+	color: red;
+}
+
+.border_red {
+	border-color: red;
+}

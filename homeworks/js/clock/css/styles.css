@@ -1,0 +1,22 @@
+body {
+	width: 100%;
+}
+#clock {
+	margin: 0 auto;
+	width: 16%;
+	min-width: 210px;
+	text-align: center;
+}
+
+#clock h2 {
+	margin-bottom: 15px;
+	font-size: 50px;
+	color: grey;
+	border: 2px solid #adadad;
+}
+
+#clock button {
+	font-size: 20px;
+	color: #696969;
+	margin: 5px;
+}

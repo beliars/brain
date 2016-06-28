@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form validation</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<form class="main_form">
+		<div class="form-group">
+			<label for="name">Name</label>
+			<input type="text" class="form-control" id="name" placeholder="Name">
+		</div>
+		<div class="form-group">
+			<label for="surname">Surname</label>
+			<input type="text" class="form-control" id="surname" placeholder="Surname">
+		</div>
+		<div class="form-group">
+			<label for="age">Age</label>
+			<input type="text" class="form-control" id="age" placeholder="Age">
+		</div>
+		<div class="form-group">
+			<label for="email">Email address</label>
+			<input type="text" class="form-control" id="email" placeholder="Email">
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="sex" checked>Male</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="sex">Female</label>
+		</div>
+		<p class="errors"></p>
+		<button type="submit" class="btn btn-default">Send form</button>
+	</form>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
