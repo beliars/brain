@@ -22,4 +22,3 @@ function resetTime(interval) {
 clockStart.addEventListener("click", function() {
 	return startTime();
 });
-
