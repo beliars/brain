@@ -10,6 +10,7 @@ body {
 
 #clock h2 {
 	margin-bottom: 15px;
+	margin-top: 15px;
 	font-size: 50px;
 	color: grey;
 	border: 2px solid #adadad;
@@ -18,5 +19,5 @@ body {
 #clock button {
 	font-size: 20px;
 	color: #696969;
-	margin: 5px;
+	margin: 5px; 
 }
