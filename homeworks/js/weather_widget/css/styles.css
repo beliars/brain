@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.widget_wrapper {
+.widget {
     font-family: "Open Sans", Arial, sans-serif;
 }
 
@@ -14,9 +14,6 @@
     clear: both;
 }
 
-.error {
-    color: red;
-}
 
 .margin_top {
     margin-top: 15px;
@@ -26,18 +23,22 @@ a {
     text-decoration: none;
 }
 
-
 .widget_wrapper {
-    display: inline-block;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 5%;
+
+}
+
+.widget {
+    display: inline-block;
     background: #87CEFA;
     padding: 10px;
     border-radius: 10px;
+    float: left;
 }
 
 
-.widget_wrapper input, button#get_weather {
+.widget input, button#get_weather {
     font-size: 14px;
     background-color: #fff;
     height: 35px;
@@ -46,18 +47,17 @@ a {
     border-radius: 5px;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); 
-    // transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
-.widget_wrapper input {
+.widget input {
     padding-left: 10px;
 }
 
-.widget_wrapper input:-webkit-autofill {
+.widget input:-webkit-autofill {
     -webkit-box-shadow: inset 0 0 0 50px #fff !important;
 }
 
-.widget_wrapper input:focus, button#get_weather:focus {
+.widget input:focus, button#get_weather:focus {
     outline: none;
     border: 1px solid #1E90FF;
     box-shadow: 0 0 5px #1E90FF;
@@ -65,7 +65,7 @@ a {
 
 #weather_widget {
     color: #736561;
-    padding-left: 5%;
+    padding-left: 5px;
 }
 
 #weather_widget p {
@@ -92,4 +92,13 @@ button#get_weather {
     height: 30px;
     margin-top: 15px;
     margin-left: 5px;
+}
+
+#map {
+    height: 400px;
+    width: 400px;
+    float: left;
+    margin-left: 15px;
+    border: 1px solid grey;
+    display: none;
 }

@@ -3,7 +3,7 @@ $(document).ready(function() {
 	var appId = '7a607b08dbb6ad1cee2d8b962c07cfbe';
 	var widget = $('#weather_widget');
 
-	$('#get_weather').on('click', function () {
+	$('#get_weather').on('click', function() {
 		$.ajax({
 			method: 'GET',
 			url: api + '?APPID=' + appId + '&q=' + $('input[name="city"]').val() + '&units=metric'
@@ -11,7 +11,8 @@ $(document).ready(function() {
 		.done(function(msg) {
 			widget.empty();
 			if (msg.cod !== 200) {
-				widget.html(msg.cod + " " + msg.message).addClass('error margin_top');
+				widget.html(msg.cod + " " + msg.message).addClass('margin_top');
+				$('#map').css('display', 'none');
 			}
 			else {
 				console.log(msg);
@@ -60,7 +61,7 @@ $(document).ready(function() {
 
 				widget.addClass('margin_top');
 				widget.append('<p>' + result.city + ', ' + result.country + '</p>');
-				widget.append('<p>' + '<img src=" ' + iconUrl  +' ">' + ' ' + result.temp.toFixed() + '&deg;С</p>');
+				widget.append('<p>' + '<img src=" ' + iconUrl  +' ">' + ' ' + result.temp + '&deg;С</p>');
 				widget.append('<p>' + result.description + '</p>');
 				widget.append('<p>get at ' + dateTime.time + ' ' + dateTime.date + '</p>');
 				widget.append('<p>Wind: ' + result.wind +' m/s</p>');
@@ -70,8 +71,22 @@ $(document).ready(function() {
 				widget.append('<p>Sunrise: ' + sunrizeTime.time + '</p>');
 				widget.append('<p>Sunset: ' + sunsetTime.time + '</p>');
 				widget.append('<p>Geo coords: [' + result.coord_lat + ', ' + result.coord_lon  + ']</p>');
+
+				$('#map').css('display', 'block');
+				initMap(result.coord_lat, result.coord_lon);
 			}
-		});
+		})
+		.fail(function(msg) {
+			widget.html(msg.status + ": " + msg.statusText).addClass('margin_top');
+		}) ;
 	});
 
+
+	var map, lat, lng;
+	function initMap(lat, lon) {
+		map = new google.maps.Map(document.getElementById('map'), {
+			center: {lat: lat, lng: lon},
+			zoom: 8
+		});
+	}
 });
