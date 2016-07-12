@@ -3,7 +3,13 @@ $(document).ready(function() {
 	var appId = '7a607b08dbb6ad1cee2d8b962c07cfbe';
 	var widget = $('#weather_widget');
 
-	$('#get_weather').on('click', function() {
+	$('#get_weather').on('click', weather);
+	$('#city').on('keypress', function(e) {
+		if (e.which == 13)
+			return weather();
+	});
+
+	function weather() {
 		$.ajax({
 			method: 'GET',
 			url: api + '?APPID=' + appId + '&q=' + $('input[name="city"]').val() + '&units=metric'
@@ -61,7 +67,7 @@ $(document).ready(function() {
 
 				widget.addClass('margin_top');
 				widget.append('<p>' + result.city + ', ' + result.country + '</p>');
-				widget.append('<p>' + '<img src=" ' + iconUrl  +' ">' + ' ' + result.temp + '&deg;С</p>');
+				widget.append('<p>' + '<img src=" ' + iconUrl  +' ">' + ' ' + Math.round(result.temp) + '&deg;С</p>');
 				widget.append('<p>' + result.description + '</p>');
 				widget.append('<p>get at ' + dateTime.time + ' ' + dateTime.date + '</p>');
 				widget.append('<p>Wind: ' + result.wind +' m/s</p>');
@@ -78,8 +84,8 @@ $(document).ready(function() {
 		})
 		.fail(function(msg) {
 			widget.html(msg.status + ": " + msg.statusText).addClass('margin_top');
-		}) ;
-	});
+		});
+	}
 
 
 	var map, lat, lng;
