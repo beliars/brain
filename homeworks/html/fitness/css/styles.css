@@ -15,7 +15,7 @@ body {
     clear: both;
 }
 
-a {
+a, a:hover {
     text-decoration: none;
 }
 
@@ -103,6 +103,7 @@ a {
     position: absolute;
     left: 0;
     right: 0;
+    z-index: 1;
     display: none;
 }
 
@@ -158,8 +159,7 @@ a {
 /* LEFT MENU STYLES START*/
 
 .left_menu {
-    float: left;
-    width: 25%;
+    padding-left: 0;
 }
 
 .side_menu {
@@ -190,8 +190,7 @@ a {
 /* MAIN CONTENT STYLES START*/
 
 .main {
-    float: right;
-    width: 70%;
+    padding-right: 0;
 }
 
 .main img {
