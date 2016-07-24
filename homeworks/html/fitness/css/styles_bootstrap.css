@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic-ext);
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: #F9F9F9;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    background-color: #fff;
+    max-width: 1060px;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    box-shadow: 0 0 5px gray;
+    padding: 10px 35px 25px;
+    margin: 0 auto;
+}
+
+.wrapper h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.main_wrapper {
+    margin: 50px 0;
+}
+
+.main img {
+    width: 100%;
+}
+
+.main p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0 20px;
+}
+
+.menu_top {
+    background: #525151;
+    background: -webkit-linear-gradient(#5e5e5e, #333333); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#5e5e5e, #333333); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#5e5e5e, #333333); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#5e5e5e, #333333); /* Standard syntax */
+    color: #eaeaea;
+}
+
+.menu_bottom {
+    background: #e1e1e1;
+}
+
+.side_menu {
+    border: 1px solid gray;
+    margin-bottom: 30px;
+}
+
+.side_menu li {
+    border-bottom: 1px solid gray;
+}
+
+.side_menu li:hover {
+    padding-left: 20px;
+    transition: all 0.2s;
+}
+
+.side_menu li:last-child {
+    border-bottom: none;
+}
+
+.side_menu li a {
+    color: gray;
+    line-height: 40px;
+    padding-left: 20px;
+}
