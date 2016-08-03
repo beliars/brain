@@ -270,7 +270,7 @@ nav ul li a {
 /*SECTION MAIN STYLES START*/
 
 .section_main__wrapper {
-	padding: 3% 12% 0;
+	padding: 40px 12% 0;
 }
 
 .section_main__header h1 {
@@ -287,10 +287,8 @@ nav ul li a {
 }
 
 .section_main__item {
-	float: left;
+	margin-bottom: 40px;
 	border: 1px solid #ccc;
-	width: 27.3%;
-	margin: 0 3% 5% 3%; 
     height: 260px;
     border-bottom: 5px solid #3cc395;
     padding: 10px 5px;
@@ -317,14 +315,11 @@ nav ul li a {
 }
 
 .section_main__item .section_main__item_buy {
-    padding-top: 4px;
-    padding-left: 24%;
+	text-align: center;
 }
 
 .section_main__item .section_main__item_buy span {
-	float: left;
-    margin-right: 15px;
-    padding-top: 8px;
+	padding-right: 5px;
 }
 
 .section_main__item .section_main__item_buy button {
@@ -340,7 +335,6 @@ nav ul li a {
 	line-height: 1em;
 	text-align: center;
 	padding-top: 6px;
-	float: left;
 }
 
 /*SECTION MAIN STYLES END*/
@@ -352,23 +346,22 @@ nav ul li a {
 }
 
 .menu_bottom__wrapper {
-	padding: 3% 12%;
+	padding: 40px 12% 0;
 }
 
 .menu_bottom .menu_bottom__block {
-	float: left;
-	width: 25%;
-	padding-left: 3%;
+	padding-bottom: 40px;
 }
 
-.menu_bottom .menu_bottom__block:last-child {
-	margin-right: 0;
+.menu_bottom .menu_bottom__block ul {
+	padding-left: 10%;
 }
 
 .menu_bottom .menu_bottom__block h3 {
 	color: #fff;
-	margin-bottom: 5%;
 }
+
+
 
 .menu_bottom .menu_bottom__block  a {
 	font-family: "Open Sans", Arial, sans-serif;
@@ -397,29 +390,10 @@ footer {
 
 /*MEDIA START*/
 
-@media (max-width: 930px) {
-	
-	.section_main__item {
-		width: 43%;
-	}
-
-	.section_main__wrapper {
-		padding: 3% 12% 0 13%;
-	}
-}
-
 @media (max-width: 750px) {
 
 	.section_carousel__item {
 		border-right: none; 
-	}
-	
-	.menu_bottom .menu_bottom__block {
-		width: 50%;
-		text-align: center;
-		padding-left: 0;
-		margin-top: 5%;
-	}
 	
 	.menu_bottom .menu_bottom__block h3 {
 		display: inline-block;
@@ -431,13 +405,6 @@ footer {
 	}
 
 	@media (max-width: 650px) {
-
-		.section_main__item {
-			float: none;
-			width: 65%;
-			margin: 0 auto 8%;
-		}
-
 		.section_carousel__item {
 			border: none;
 		}
